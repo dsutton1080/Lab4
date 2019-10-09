@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Apple</title>
+        <script type="text/javascript" src="formChecker.js"></script>
+        <link rel="stylesheet" href="style4.css">
+    </head>
+    <body>
+        <h1>Apple Store</h1>
+        <form onsubmit="return checkForm()" method="POST" action="customerBackend.php">
+            <label>Email</label>
+            <input type="text" name="username" id="username"><br>
+
+            <label>Password</label>
+            <input type="text" name="password" id="password"><br>
+            <br><br><br>
+
+            <label>iPhone: $600</label><br>
+            Quantity<input type="text" name="q1" id="q1"><br>
+            <img src="./Images/iphone.jpeg" width="200px" height="200px"><br><br>
+
+            <label>iPad: $400</label><br>
+            Quantity<input type="text" name="q2" id="q2"><br>
+            <img src="./Images/ipad.jpeg" width="200px" height="200px"><br><br>
+
+            <label>Mac: $1000</label><br>
+            Quantity<input type="text" name="q3" id="q3"><br>
+            <img src="./Images/mac.jpeg" width="200px" height="200px"><br><br><br>
+
+            <label>Shipping</label><br>
+            <select name="shipping">
+                <option value="Free 7 day">Free 7 day</option>
+                <option value="$50.00 over night">$50.00 over night</option>   
+                <option value="$5.00 three day">$5.00 three day</option>    
+            </select><br><br>
+
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit"><br>
+        </form>
+    </body>
+</html>
